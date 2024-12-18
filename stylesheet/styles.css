@@ -1,0 +1,217 @@
+/* Global styles go here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+textarea {
+	width: 100%;
+	height: 100px;
+}
+
+.page-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #005a3f;
+	color: #fff;
+	padding: 10px;
+}
+.page-header .logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.page-header .logo img {
+	width: 50px;
+	height: 40px;
+	padding: 0 10px;
+}
+.page-heading {
+	text-align: center;
+	flex: 1;
+}
+.brdr-btn {
+	padding: 8px 20px 10px 20px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	transition: 0.3s ease;
+	color: #fff;
+  }
+  .brdr-btn:hover {
+	border: 2px solid #005a3f;
+	transition: 0.3s ease;
+	background-color: #fff;
+	color: #005a3f;
+	cursor: pointer;
+  }
+
+/*================
+* Login Page CSS *
+==================*/
+.loginpage-block label {
+	width: 100%;
+}
+.loginpage-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.loginpage-block input[type="text"],
+.loginpage-block input[type="password"] {
+			padding: 15px 10px;
+			border-collapse: collapse;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin: 5px 0;
+			width: 100%;
+			display: inline-block;
+			box-sizing: border-box;
+		}
+.loginpage-block input[type="submit"] {
+	background: #119a2a;
+	color: #fff;
+	padding: 12px;
+	border: 0;
+	border-radius: 8px;
+	margin: 5px 0;
+	cursor: pointer;
+	width: 100%;
+}
+.loginpage-block input[type="submit"]:hover {
+	background: #005a3f;
+	transition: 1s;
+}
+.login-form {
+	background: rgba(250, 250, 250, 0.3);
+	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
+	width: 50%;
+	padding: 15px;
+	border-radius: 8px;
+	margin: 20px;
+}
+.signup-text {
+	text-align: center;
+}
+
+/*=======================
+* Registration Page CSS *
+=========================*/
+.regpage-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.regpage-block td {
+  vertical-align: text-top;
+}
+.regpage-block input[type="text"],
+.regpage-block input[type="password"],
+.regpage-block input[type="email"],
+.regpage-block select {
+			padding: 10px;
+			border-collapse: collapse;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin: 5px 0;
+			width: 100%;
+			display: block;
+			box-sizing: border-box;
+		}
+.regpage-block input[type="file"] {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s ease;
+}
+.regpage-block input[type="submit"] {
+	background: #119a2a;
+	color: #fff;
+	padding: 12px;
+	border: 0;
+	border-radius: 8px;
+	margin: 5px 0;
+	cursor: pointer;
+	width: 100%;
+}
+.regpage-block input[type="submit"]:hover {
+	background: #14bc32;
+	padding: 12px;
+	border: 5px;
+	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 12px 12px 0 rgba(0,0,0,0.19);
+	transition: 0.4s;
+}
+.reg-form {
+	background: rgba(250, 250, 250, 0.5);
+	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
+	width: 80%;
+	padding: 15px;
+	border-radius: 8px;
+	margin: 20px;
+}
+
+
+/*=======================
+*   Index   Page   CSS   *
+=========================*/
+.jy_header{
+	background: #fff;
+	margin: 0 0 10px 0;
+	border: 0;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.jy_footer{
+	background: #273029;
+	color: #fff;
+	margin: 10px 0 0 0;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/* Other design CSS */
+.notify_info {
+	background: #dc143c;
+	padding: 8px 5px;
+	color: #fff;
+	margin: 10px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	text-align: center;
+}
+.notify_infook {
+	background: #e6ff42;
+	padding: 8px 5px;
+	color: #001d07;
+	margin: 10px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	text-align: center;
+}
+
+/* Page Footer CSS */
+.bfooter {
+	background: #00251c;
+	color: #fff;
+	text-align: center;
+	padding: 40px 0;
+	border-top: 2px dotted #a3ff33;
+}

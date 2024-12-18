@@ -1,0 +1,639 @@
+/* Global styles go here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  border: 0;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.margin10 {
+  margin: 10px;
+}
+.head-margin-top {
+  padding-top: 69px;
+}
+.content-block-head {
+  background-color: #ffffc9;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 1px;
+}
+.content-block-body {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 0 0 8px 8px;
+}
+.content-block-elem {
+  margin: 0 8px 0 8px;
+}
+.content-block-elem i {
+  padding: 8px 8px 8px 0;
+}
+
+/* Navigation Bar CSS */
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: #007250;
+  font-size: 20px;
+  margin-bottom: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-btn {
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+.nav-btn:hover, .nav-btn:active {
+  background-color: #fff;
+  color: #007250;
+  transition: 0.3s ease;
+}
+.nav-btn-selected {
+  padding: 10px 10px 8px 10px;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  color: #007250;
+  border-bottom: 2px solid #000;
+  transition: color 0.3s ease;
+}
+
+/* Header styles */
+.bgwhite {
+  background-color: #fff;
+}
+.profile-header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cover-photo {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 220px;
+  background-image: url('/JoinYou/images/cover.jpg');
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+}
+
+.caption {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin: 0 6px 6px 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cover-photo:hover .caption {
+  opacity: 1;
+}
+
+.profile-action-area{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.action-info {
+  display: flex;
+  flex-direction: row;
+}
+.action-info .basics {
+  margin-left: 20px;
+}
+
+.profile-picture {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-picture img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  margin: -60px 0 0 10%;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.profile-picture:hover img {
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-picture:hover .overlay {
+  opacity: 1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-icon {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+.profile-name {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+
+
+.content900 {
+  background-color: #fff;
+  max-width: 900px;
+  min-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+
+
+/*Update profile picture code CSS */
+.profile-pic {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 20px auto;
+  display: block;
+}
+/* Style the form container */
+.uploadp form {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Style the label */
+.uploadp label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+/* Style the file input */
+.uploadp input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+/* Style the submit button */
+.uploadp input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  margin: 10px 4px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+/* Hover effect for the submit button */
+.uploadp input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Main content styles */
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 1200px;
+  gap: 20px;
+}
+.profile-content-left {
+  margin-bottom: 20px;
+  flex-basis: 25%;
+  flex-shrink: 1;
+}
+.profile-content-right {
+  margin: 0 10px 20px 10px;
+  flex-basis: 75%;
+  flex-shrink: 1;
+}
+.new-post-blk {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.post-txt-box {
+  flex: 1;
+}
+.post-txt-box textarea {
+  border: none;
+  padding: 10px 0 10px 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+}
+.post-txt-box textarea:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.post-btn .sub-btn {
+  display: block;
+  background-color: #005a3f;
+  padding: 40px;
+  margin-left: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+.post-submit-button:hover {
+  background-color: #003928;
+}
+.file-input {
+  display: none;
+}
+.file-upload {
+  text-align: center;
+}
+.file-label {
+  display: inline-block;
+  padding: 18px 20px;
+  background-color: #f1fffb;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.profile-posts,
+.profile-info {
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .profile-content {
+    flex-direction: column;
+  }
+  .profile-bio,
+  .profile-posts,
+  .profile-info {
+    flex-basis: 100%;
+  }
+
+  .nav-header {
+    position: static;
+  }
+  .profile-header {
+    padding-top: 0;
+  }
+  .head-margin-top {
+    padding-top: 0px;
+  }
+}
+
+.profile-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+.heading-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+.heading-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-body {
+  background-color: #fff;
+  padding: 0 15px 15px 15px;
+  flex: 1;
+}
+.post-heading {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 1px;
+}
+.post-author-left {
+  display: flex;
+  align-items: center;
+}
+.post-author-right {
+  margin-left: auto;
+}
+.post-author-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 10px;
+}
+.post-author-details {
+  flex: 1; /* Added this to make it take up remaining space */
+  display: flex;
+  flex-direction: column;
+}
+.post-author-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.post-author-time {
+  font-size: 12px;
+  color: #888;
+}
+.post-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.edit-button, .delete-button {
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 3px;
+}
+.delete-button:hover {
+  background-color: rgb(255, 62, 62);
+}
+.edit-button:hover {
+  background-color: rgb(193, 177, 0);
+}
+.post-reaction {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 10px 10px 10px;
+}
+.post-reaction .post-react-btn {
+  padding: 8px 20px 10px 20px;
+  background: #005a3f;
+  border: 1px solid #005a3f;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  color: #fff;
+}
+.post-reaction .post-react-btn:hover {
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #005a3f;
+}
+
+.images {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: -5px;
+}
+
+.images img {
+  max-height: 200px;
+  margin: 3px;
+  border: 1px solid #ccc;
+  object-fit: cover;
+}
+
+.post-text {
+  margin-top: 15px;
+}
+
+
+/* User friend list page code */
+.search-container {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 5px;
+}
+.search-input {
+  border: none;
+  outline: none;
+  width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.search-button {
+  background-color: #005a3f;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.filter-search {
+  display: flex;
+  flex-direction: column;
+}
+.filter-search select {
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+.filter-search button {
+  background-color: #005a3f;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  width: 100%;
+}
+.user-card {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 10px;
+}
+.user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.user-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user-details {
+  flex: 1;
+}
+.user-details a {
+  color: #000;
+}
+.user-name {
+  font-weight: bold;
+}
+.user-location {
+  color: #888;
+}
+.reject-btn {
+  background-color: #fc4343;
+  padding: 5px 8px;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 2px;
+  transition: color 0.2s ease;
+}
+.reject-btn:hover {
+  background-color: #aa0606;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.add-btn {
+  background-color: #007250;
+  padding: 5px 8px;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 2px;
+  transition: color 0.2s ease;
+}
+.add-btn:hover {
+  background-color: #005b40;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.view-clk-btn {
+  background-color: #888;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 2px;
+  transition: color 0.2s ease;
+}
+.view-clk-btn:hover {
+  background-color: #545454;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+
+
+
+.footer {
+  background-color: #00251c;
+  padding: 20px 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #f0f0f0;
+  margin: 5px 15px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.footer-links a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.footer-notions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 5px 20px 5px;
+}
+.footer-notions i {
+  margin: 5px 2px;
+}
+.footer-notion1, .footer-notion2 {
+  color: #f0f0f0;
+  text-align: center;
+}
+.brdr-btn {
+  padding: 8px 20px 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  color: #fff;
+}
+.brdr-btn:hover {
+  border: 2px solid #ff3e3e;
+  transition: 0.2s ease;
+  background-color: #fff;
+  color: #ff3e3e;
+	cursor: pointer;
+}
